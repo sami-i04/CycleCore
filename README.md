@@ -6,6 +6,8 @@ Battery health monitor for macOS. Shows health, cycle count and capacity history
 
 ![CycleCore – Battery Health Monitor for Mac, iPhone and AirPods](screenshots/cyclecore.png)
 
+**Download:** [latest release](../../releases/latest) → unzip, move CycleCore to Applications. On first launch right-click → Open (the app is not notarized).
+
 **Build:** macOS 13+, Xcode Command Line Tools → `./build_app.sh`
 
 Feedback and ideas are welcome – just open an [issue](../../issues).
