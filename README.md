@@ -1,6 +1,8 @@
-# CycleCore
+# CycleCore – Battery Health Monitor for Mac, iPhone and AirPods
 
 Battery health monitor for macOS. Shows health, cycle count and capacity history for your Mac, iPhone, iPad and AirPods. A free alternative to coconutBattery.
+
+![CycleCore – Battery Health Monitor for Mac, iPhone and AirPods](screenshots/cyclecore.png)
 
 **Build:** macOS 13+, Xcode Command Line Tools → `./build_app.sh`
 

@@ -55,7 +55,7 @@ final class MainController: NSObject, NSTableViewDataSource, NSTableViewDelegate
         brandIcon.contentTintColor = Palette.green
         let brandRow = NSStackView(views: [brandIcon, brand]); brandRow.spacing = 6
 
-        settingsButton.title = "  Einstellungen"
+        settingsButton.title = "  " + String(localized: "Einstellungen")
         settingsButton.image = NSImage(systemSymbolName: "gearshape", accessibilityDescription: nil)?
             .withSymbolConfiguration(.init(pointSize: 13, weight: .regular))
         settingsButton.imagePosition = .imageLeft
@@ -142,7 +142,7 @@ final class MainController: NSObject, NSTableViewDataSource, NSTableViewDelegate
         }
         let hist = HistoryStore.shared.devices
         if !hist.isEmpty {
-            list.append(.header("VERLAUF"))
+            list.append(.header(String(localized: "VERLAUF")))
             list += hist.map { .history($0.serial) }
         }
         items = list

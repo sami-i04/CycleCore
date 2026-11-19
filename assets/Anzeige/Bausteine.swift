@@ -214,7 +214,7 @@ final class DeviceView: NSView {
 
     func setCharge(_ percent: Int?, mah: Int?, charging: Bool) {
         let p = percent ?? 0
-        chargeRing.caption = "LADUNG"
+        chargeRing.caption = String(localized: "LADUNG")
         chargeRing.value = percent.map { "\($0) %" } ?? "–"
         chargeRing.detail = mah.map { String(localized: "\($0) mAh") } ?? ""
         chargeRing.fraction = CGFloat(p) / 100
@@ -223,7 +223,7 @@ final class DeviceView: NSView {
     }
 
     func setHealth(_ h: Double?, full: Int?, design: Int?) {
-        healthRing.caption = "GESUNDHEIT"
+        healthRing.caption = String(localized: "GESUNDHEIT")
         if let h = h {
             healthRing.value = String(format: "%.1f %%", h * 100)
             healthRing.detail = String(localized: "\(full ?? 0) / \(design ?? 0) mAh")

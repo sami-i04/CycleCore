@@ -146,3 +146,6 @@
 "nicht verfügbar" = "not available";
 "seit %@" = "since %@";
 "Über CycleCore" = "About CycleCore";
+"LADUNG" = "CHARGE";
+"GESUNDHEIT" = "HEALTH";
+"VERLAUF" = "HISTORY";
